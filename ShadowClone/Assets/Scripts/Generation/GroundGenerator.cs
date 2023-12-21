@@ -15,8 +15,12 @@ public class GroundGenerator : MonoBehaviour
     [Header("General")]
     [SerializeField] private int chunkSize = 16;
     [SerializeField] private int worldWidthChunks = 5;
-    [SerializeField] private Tilemap groundTilemap;
-    [SerializeField] private Tile[] tiles;
+    [SerializeField] private Tilemap tilemapHigh;
+    [SerializeField] private Tilemap tilemapMid;
+    [SerializeField] private Tilemap tilemapLow;
+    [SerializeField] private RuleTile ruleTileLowType;
+    [SerializeField] private RuleTile ruleTileHighType;
+    [SerializeField] private Tile basicTile;
     [SerializeField] private int seed;
 
     [Header("Land")]
@@ -81,44 +85,18 @@ public class GroundGenerator : MonoBehaviour
 
                 if (perlinVal < .35f)
                 {
-                    groundTilemap.SetTile(new Vector3Int(i, j, 0), tiles[2]);
+                    tilemapLow.SetTile(new Vector3Int(i, j, 0), ruleTileLowType);
                 }
                 else if (perlinVal < .65f)
                 {
-                    if (genRiver)
-                    {
-                        groundTilemap.SetTile(new Vector3Int(i, j, 0), tiles[2]);
-                    }
-                    else
-                    {
-                        if (Random.Range(0f, 1f) > .9f)
-                        {
-                            groundTilemap.SetTile(new Vector3Int(i, j, 0), tiles[1]);
-                        }
-                        else
-                        {
-                            groundTilemap.SetTile(new Vector3Int(i, j, 0), tiles[0]);
-                        }
-                    }
+                    //groundTilemap.SetTile(new Vector3Int(i, j, 0), basicTile);
                 }
                 else
                 {
-                    if (genRiver)
-                    {
-                        groundTilemap.SetTile(new Vector3Int(i, j, 0), tiles[5]);
-                    }
-                    else
-                    {
-                        if (Random.Range(0f, 1f) > .9f)
-                        {
-                            groundTilemap.SetTile(new Vector3Int(i, j, 0), tiles[4]);
-                        }
-                        else
-                        {
-                            groundTilemap.SetTile(new Vector3Int(i, j, 0), tiles[3]);
-                        }
-                    }
+                    tilemapHigh.SetTile(new Vector3Int(i, j, 0), ruleTileHighType);
                 }
+
+                tilemapMid.SetTile(new Vector3Int(i, j, 0), basicTile);
             }
         }
 
