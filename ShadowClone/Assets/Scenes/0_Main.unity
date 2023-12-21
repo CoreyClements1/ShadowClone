@@ -436,15 +436,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a0e3635fffed7a48be0efaca7284e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chunkSize: 16
-  worldWidthChunks: 5
+  viewDistance: 50
+  seed: 100
+  playerTransform: {fileID: 1346036233}
   tilemapHigh: {fileID: 984541378}
   tilemapMid: {fileID: 447711202}
   tilemapLow: {fileID: 1841009358}
   ruleTileLowType: {fileID: 11400000, guid: 658000acf17603340b6fa4e9e773b21c, type: 2}
   ruleTileHighType: {fileID: 11400000, guid: a7748dfc39d858749a565c3be1aa031c, type: 2}
   basicTile: {fileID: 11400000, guid: b2951808a8d9d4a4f9e3af9d2fbed8f2, type: 2}
-  seed: 100
   scale: 60
   edgeOffsetScale: 10
   edgeOffsetAmt: 20
