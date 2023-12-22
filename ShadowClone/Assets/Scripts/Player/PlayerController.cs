@@ -12,13 +12,20 @@ public class PlayerController : MonoBehaviour
     #region VARIABLES
 
 
+    public static PlayerController Instance { get; private set; }
+    public Reticle reticle { get; private set; }
     [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private AbilityManager abilityManager;
+    public Transform projectileParent;
+
+    public bool canMove { get; private set; }
+    public bool canUseAbilities { get; private set; }
 
 
     #endregion
 
 
-    #region MONOBEHAVIOUR
+    #region INIT
 
 
     // Start
@@ -26,19 +33,32 @@ public class PlayerController : MonoBehaviour
     void Start()
     //--------------------------------------//
     {
+        InitSingleton();
 
+        canMove = true;
+        canUseAbilities = true;
+
+        reticle = GetComponent<Reticle>();
+        abilityManager.EquipWeapon(0);
 
     } // END Start
 
 
-    // Update
+    // Initializes this as a singleton
     //--------------------------------------//
-    void Update()
+    private void InitSingleton()
     //--------------------------------------//
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(this);
+        }
 
-
-    } // END Update
+    } //END InitSingleton
 
 
     #endregion

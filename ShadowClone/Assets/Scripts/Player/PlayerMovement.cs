@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float moveSpeed;
     [SerializeField] private Rigidbody2D rb;
-    private bool canMove = true;
     private Vector2 moveInputAxes;
 
 
