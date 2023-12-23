@@ -11,8 +11,8 @@ public class Enemy : MonoBehaviour
     #region VARIABLES
 
 
-    protected int maxHealth;
-    protected int currentHealth;
+    protected float maxHealth;
+    protected float currentHealth;
 
 
     #endregion
@@ -23,14 +23,14 @@ public class Enemy : MonoBehaviour
 
     // Damages the enemy
     //--------------------------------------//
-    public void DamageEnemy(int damage)
+    public void DamageEnemy(float damage)
     //--------------------------------------//
     {
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
             KillEnemy();
-        }
+        } 
 
     } // END DamageEnemy;
 

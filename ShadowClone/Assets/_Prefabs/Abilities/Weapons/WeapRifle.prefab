@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 506fa95e0ab6a1f4aa71fdd07bac9bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityName: Rifle
   id: 0
+  abilityIcon: {fileID: 333888533, guid: 2f2919f32f720514d8bd430e0c518d4e, type: 3}
   bulletPrefab: {fileID: 8221461002605669470, guid: 3087426464423b1469cb60882e188d9c, type: 3}

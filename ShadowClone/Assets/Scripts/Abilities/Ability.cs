@@ -11,15 +11,17 @@ public abstract class Ability : MonoBehaviour
     #region VARIABLES
 
 
-    protected string abilityName;
+    public string abilityName;
     public int id;
-    protected int abilityLevel = 1;
-    protected int damage = 0;
+    public Sprite abilityIcon;
+    public int abilityLevel = 1;
+    protected float damage = 0f;
     protected float attackSpeed = 0;
     protected float projectileSpeed = 0;
     protected int numProjectiles = 0;
     protected int pierce = 1;
     protected float projectileLifetime = 0;
+    protected float range = 0f;
 
 
     #endregion

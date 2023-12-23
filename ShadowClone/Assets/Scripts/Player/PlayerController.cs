@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public static PlayerController Instance { get; private set; }
     public Reticle reticle { get; private set; }
     [SerializeField] private PlayerMovement playerMovement;
-    [SerializeField] private AbilityManager abilityManager;
+    public AbilityManager abilityManager;
     public Transform projectileParent;
 
     public bool canMove { get; private set; }
@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
         canUseAbilities = true;
 
         reticle = GetComponent<Reticle>();
-        abilityManager.EquipWeapon(0);
 
     } // END Start
 
@@ -75,6 +74,20 @@ public class PlayerController : MonoBehaviour
         playerMovement.OnMovement(value.ReadValue<Vector2>());
 
     } // END OnMovement
+
+
+    // OnL, initiate level up
+    //--------------------------------------//
+    public void OnL(InputAction.CallbackContext value)
+    //--------------------------------------//
+    {
+        // TODO: TEMP
+        if (value.started)
+        {
+            CanvasManager.Instance.levelUpCanvas.InitiateLevelUp();
+        }
+
+    } // END OnL
 
 
     #endregion

@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
 
     protected float projSpeed;
     protected int pierce;
-    protected int damage;
+    protected float damage;
     protected float lifetime;
 
     protected Vector3 fireDirection;
@@ -46,7 +46,7 @@ public class Projectile : MonoBehaviour
 
     // Fire the projectile in a given direction
     //--------------------------------------//
-    public virtual void FireProjectile(Vector3 _fireDirection, float _projSpeed, int _pierce, int _damage, float _lifetime)
+    public virtual void FireProjectile(Vector3 _fireDirection, float _projSpeed, int _pierce, float _damage, float _lifetime)
     //--------------------------------------//
     {
         projSpeed = _projSpeed;
