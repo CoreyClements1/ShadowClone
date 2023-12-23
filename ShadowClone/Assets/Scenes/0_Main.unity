@@ -1548,8 +1548,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 2096097244, guid: 9865e55b1d8f0a5429cf0a1cc807024b, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 1935699751, guid: 2f2919f32f720514d8bd430e0c518d4e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2073,6 +2073,11 @@ MonoBehaviour:
   acquirableWeaponPrefabs:
   - {fileID: 8007598918269454108, guid: da4929003d7d8534fb83f4e50bb940f6, type: 3}
   - {fileID: 8007598918269454108, guid: 4637a02da51eb8042b9f5c6a838fd8f3, type: 3}
+  acquirableShadowmancyPrefabs:
+  - {fileID: -5858558334863397818, guid: b2ddfcb06b9c32548bbee3389df8d656, type: 3}
+  - {fileID: -5858558334863397818, guid: 45924e7cd92fe1f4ba5ad0315473fb40, type: 3}
+  - {fileID: -5858558334863397818, guid: 92fb00792662a8a4aab3fb7a9d8187e7, type: 3}
+  - {fileID: -5858558334863397818, guid: 202c8d24c9fe459409153896c3b96089, type: 3}
 --- !u!114 &1346036239
 MonoBehaviour:
   m_ObjectHideFlags: 0
