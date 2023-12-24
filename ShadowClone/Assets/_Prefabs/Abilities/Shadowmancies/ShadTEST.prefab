@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abilityName: Aura
-  id: 1
+  id: 3
   abilityIcon: {fileID: -824449453, guid: 2f2919f32f720514d8bd430e0c518d4e, type: 3}
   abilityLevel: 1
   auraTransform: {fileID: 5431841143087572117}

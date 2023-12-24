@@ -313,6 +313,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: AbilitiesSheet_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f625781e251fccc4f86c605bf70345cd
+      internalID: -1990882762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -332,6 +353,7 @@ TextureImporter:
       AbilitiesSheet_12: -1177123966
       AbilitiesSheet_10: 1935699751
       AbilitiesSheet_11: 160880959
+      AbilitiesSheet_14: -1964643370
       AbilitiesSheet_8: -1990882762
       AbilitiesSheet_6: -1257367467
       AbilitiesSheet_2: 1976411393

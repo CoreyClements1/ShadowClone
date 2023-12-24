@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class Enemy : MonoBehaviour
 
     protected float maxHealth;
     protected float currentHealth;
+    public event EventHandler OnEnemyDie;
 
 
     #endregion
@@ -46,6 +48,7 @@ public class Enemy : MonoBehaviour
     public void KillEnemy()
     //--------------------------------------//
     {
+        OnEnemyDie?.Invoke(this, EventArgs.Empty);
         Destroy(this.gameObject);
 
     } // END KillEnemy

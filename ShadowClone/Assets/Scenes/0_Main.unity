@@ -2075,8 +2075,8 @@ MonoBehaviour:
   - {fileID: 8007598918269454108, guid: 4637a02da51eb8042b9f5c6a838fd8f3, type: 3}
   acquirableShadowmancyPrefabs:
   - {fileID: -5858558334863397818, guid: b2ddfcb06b9c32548bbee3389df8d656, type: 3}
+  - {fileID: 8744453589917345391, guid: 92fb00792662a8a4aab3fb7a9d8187e7, type: 3}
   - {fileID: -5858558334863397818, guid: 45924e7cd92fe1f4ba5ad0315473fb40, type: 3}
-  - {fileID: -5858558334863397818, guid: 92fb00792662a8a4aab3fb7a9d8187e7, type: 3}
   - {fileID: -5858558334863397818, guid: 202c8d24c9fe459409153896c3b96089, type: 3}
 --- !u!114 &1346036239
 MonoBehaviour:
